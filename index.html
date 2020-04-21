@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="Technopolitan - Το podcast των power users. To Technopolitan είναι ένα 'ραδιοφωνικό' μαγκαζίνο στο οποίο σχολιάζουμε τα καλύτερα τεχνολογικά νέα της εβδομάδας. Η θεματολογία του Technopolitan ποικίλει και κινείται κυρίως γύρω από το mobile, το desktop, το gaming και άλλα, όμως μας αρέσουν και τα πιο προχωρημένα θέματα που αφορούν το Linux, το Android, τους server και τα single-board computer όπως το Raspberry Pi.
+
+Πάνω από όλα όμως το Technopolitan είναι γέλιο, κράξιμο, καζούρα και φυσικά καλή παρέα και δε θα μπορούσε να γίνει πραγματικότητα χωρίς τη σύμπραξη δυνάμεων του Cerebrux και του Dr. Android αλλά και της δικής σας στήριξης.">
+  <meta name="keywords" content="Technopolitan, Ελληνικό, podcast, τεχνολογία">
+  <meta name="robots" content="index, nofollow">
+  <meta name="web_author" content="Technopolitan, Chris K, Bill, Salih">
+  <meta name="language" content="Greek">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Technopolitan podcast</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link rel="stylesheet" href="css/circle.skin/circle.player.css">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" alt="apple icon technopolitan 57x57">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" alt="apple icon technopolitan 60x60">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" alt="apple icon technopolitan 72x72">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" alt="apple icon technopolitan 76x76">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" alt="apple icon technopolitan 114x114">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" alt="apple icon technopolitan 120x120">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" alt="apple icon technopolitan 144x144">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" alt="apple icon technopolitan 152x152">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" alt="apple icon technopolitan 180x180">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png" alt="android icon technopolitan 192x192">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" alt="favicon technopolitan 32x32">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" alt="favicon technopolitan 96x96">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" alt="favicon technopolitan 16x16">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" alt="microsoft icon technopolitan 144x144">
+  <meta name="theme-color" content="#ffffff">
+  
+</head>
+<body>
+	
+<ul class="social">
+  <li><a href="https://www.facebook.com/technopolitan.gr/"><img src="css/images/fb_top.png" alt="Technopolitan on Facebook"></a></li>
+  <li><a href="https://plus.google.com/+TechnopolitanGr"><img src="css/images/g+new_top.png" alt="Technopolitan on Google+"></a></li>
+  <li><a href="https://twitter.com/Technopolitangr"><img src="css/images/tw_top.png" alt="Technopolitan on Twitter"></a></li>
+  <li><a href="https://feedburner.google.com/fb/a/mailverify?uri=cerebrux-Technopolitan"><img src="css/images/rss_top.png" alt="Technopolitan on RSS"></a></li>        
+</ul>
+	
+<div id="jquery_jplayer_1" class="cp-jplayer"></div>
+  
+<!-- TITLE -->  
+  <div class="section no-pad-bot banner" id="index-banner">
+    <div class="container">
+      <br><br>
+	 	<div class="row center">      
+      	<img class="logo" src="css/images/logo.png" alt="technopolitan logo">
+      </div>      	
+      	<div class="row center">
+        		<h5 class="header col s12 light gray-text">Το ελληνικό τεχνολογικό podcast για τους power users</h5>
+      	</div>
+
+<!-- PLAYER -->
+<div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
+
+			<!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+			<div id="cp_container_1" class="cp-container">
+				<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+					<div class="cp-buffer-1"></div>
+					<div class="cp-buffer-2"></div>
+				</div>
+				<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+					<div class="cp-progress-1"></div>
+					<div class="cp-progress-2"></div>
+				</div>
+				<div class="cp-circle-control"></div>
+				<ul class="cp-controls">
+					<li><a class="cp-play" tabindex="1">play</a></li>
+					<li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+				</ul>
+			</div>
+		</div>
+      <br><br>
+      
+<!-- BUTTON -->      
+      <div class="row center">
+			<ul class="collapsible" data-collapsible="accordion">
+    			<li>
+      			<div class="collapsible-header"><i class="material-icons">comment</i>Θέματα εκπομπής #15</div>
+      			<div class="collapsible-body white">
+	      			<ul>
+				<br>
+   	   				<li><a href="https://www.engadget.com/2016/12/23/a-star-will-graze-our-solar-system-in-a-million-years/" target="blank" >Έρχεται το τέλος: Ένα αστέρι πλησιάζει τη Γη</a> <b>Επιστήμη</b></li>	      			
+   	   				<li><a href="http://www.myphone.gr/forum/showthread.php?t=446189" target="blank" >Τα open source λειτουργικά συστήματα είναι τα πιο ευάλωτα;;;</a> <b>Linux</b></li>	      			
+   	   				<li><a href="http://www.doctorandroid.gr/2017/02/android-wear-20.html" target="blank" >Διαθέσιμο το Android Wear 2.0</a> <b>Android</b></li>	      			
+   	   				<li><a href="https://www.engadget.com/2016/12/22/raspberry-pi-releases-an-os-to-breathe-new-life-into-old-pcs/" target="blank" >Debian + Pixel: Το νέο πανάλαφρο λειτουργικό σύστημα για παλιά PC</a> <b>Linux</b></li>	      			
+   	   				<li><a href="https://www.engadget.com/2017/01/13/peace-sign-pics-fingerprints/" target="blank" >Τα δακτυλικά αποτυπώματα μπορεί να αντιγραφούν από φωτογραφίες!</a> <b>Ασφάλεια</b></li>	      			
+   	   				<li><a href="https://www.engadget.com/2017/01/19/soft-robot-wraps-around-your-heart-to-help-it-beat/" target="blank" >Ρομποτικό γάντι για την καρδιά βοηθάει όσους πάσχουν από καρδιακή ανεπάρκεια!</a> <b>Επιστήμη</b></li>	      			
+   	   				<li><a href="http://www.pcworld.com/article/3164876/linux/arch-linux-pulls-the-plug-on-32-bit.html" target="blank" >To Arch Linux σταματάει την κατασκευή 32-bit πακέτων</a> <b>Linux</b></li>	      			
+   	   				<li><a href="http://www.zdnet.com/article/why-munich-should-stick-with-linux/" target="blank" >Η περίπτωση του Δήμου Μονάχου και του Linux</a> <b>Linux</b></li>	      			
+   	   				<li><a href="https://www.digitallife.gr/dite-ta-10-kalitera-games-gia-to-nintendo-switch-78260" target="blank" >Nintendo Switch: Τα 10 καλύτερα παιχνίδια μέχρι στιγμής</a> <b>Games</b></li>	      			
+   	   				<li><a href="https://www.engadget.com/2017/02/13/nintendo-1-2-switch-hands-on/" target="blank" >1-2 Switch: Το πιο ενδιαφέρον παιχνίδι του Nintendo Switch</a> <b>Games</b></li>	      			
+   	   				<li><a href="http://www.theinquirer.net/inquirer/news/3003623/nes-classic-can-be-hacked-play-700-games-but-you-might-as-well-burn-your-receipt" target="blank" >Το NES Classic παίζει πλέον 700 παιχνίδια!</a> <b>Games</b></li>	      			
+   	   				<li><a href="https://www.engadget.com/2017/02/17/nintendo-switch-eshop-account-purchases/" target="blank" >Τα παιχνίδια του eShop στο Nintendo Switch θα είναι “δεμένα” με το λογαριασμό μας</a> <b>Games</b></li>	      			
+   	   				<li><a href="https://www.gamingonlinux.com/articles/hitman-released-for-linux-initial-port-report-and-two-gameplay-videos.9118" target="blank" >Το Hitman έγινε port στο Linux και παίζει τέλεια</a> <b>Linux</b></li>	      			
+   	   				<li><a href="http://www.omgubuntu.co.uk/2017/02/3000-steam-linux-games-available" target="blank" >Το Steam προσφέρει πλέον πάνω από 3.000 παιχνίδια στο Linux</a> <b>Linux</b></li>	      			
+   	   				<li><a href="http://www.theverge.com/2017/2/17/14655406/jj-abrams-stephen-king-castle-rock-series-stranger-things" target="blank" >Ο Stephen King και ο JJ Abrams ετοιμάζουν σειρά τύπου ‘Stranger Things’</a> <b>TV</b></li>	      			
+   	   				<li><a href="https://www.youtube.com/watch?v=yuJ25aDdw4s" target="blank" >Trailer | Ghost in the shell</a> <b>TV</b></li>	      			
+					<br>
+				</ul>      
+      			</div>
+          	</li>
+			</ul>      
+		</div>      
+    </div>
+      <br><br>
+  </div>
+  
+  <div class="row">
+        <div class="col s12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Τι είναι το Technopolitan;</span>
+              <p>To Technopolitan πρόκειται για ένα "ραδιοφωνικό" μαγκαζίνο στο οποίο σχολιάζουμε τα καλύτερα κατά τη γνώμη μας τεχνολογικά νέα της εβδομάδας. Η θεματολογία του Technopolitan ποικίλει και κινείται κυρίως γύρω από το mobile, το desktop, το gaming και άλλα, όμως μας αρέσουν και τα πιο προχωρημένα πράγματα για το Linux, το Android, τους server και τα single-board computer όπως το Raspberry Pi. </p>
+              <br>
+              <p>Πάνω από όλα όμως το Technopolitan είναι γέλιο, κράξιμο, καζούρα και φυσικά καλή παρέα και δε θα μπορούσε να γίνει πραγματικότητα χωρίς τη σύμπραξη δυνάμεων του Cerebrux και του Dr. Android αλλά και της δικής σας στήριξης.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://cerebrux.net/" target="_blank">Cerebrux</a>
+              <a href="http://www.doctorandroid.gr/" target="_blank">Dr. Android</a>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+<!-- PRESENTERS -->
+ <div class="section no-pad-bot presenters white">
+  <div class="container">
+  <h1 class="header center grey-text">Συντελεστές</h1>
+  <div class="row center">
+  	 <h5 class="header col s12 light black-text">Γνωρίστε τα τρία ταγάρια που σας φιλοξενούν στο Technopolitan</h5>
+  </div>
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+    			<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="css/images/Bill.png" alt="Bill on technopolitan" >
+    			</div>
+    			<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Βασίλης<i class="material-icons right">more_vert</i></span>
+      			<p><a href="https://cerebrux.net/" target="_blank">Cerebrux</a></p>
+    			</div>
+    			<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Ο Βασίλης...<i class="material-icons right">close</i></span>
+      			<p>είναι hipster απ' τους λίγους, αμετανόητος Apple fan και μεγάλος τσαχπινογαργαλιάρης.</p>
+      			<p>Εμπνέεται από τις συζητήσεις με επιχειρήματα, διαθέτει εξαιρετικά εκπλεπτισμένο χιούμορ και δεν αντέχει χωρίς το "μωρακι". Όταν δεν τσακώνεται με το Salih για το αν λέγεται "σουβλάκι" ή "καλαμάκι" γράφει στο Cerebrux.</p>
+      			<p>Στόχος του να καταφέρει να παίξει όλα τα διαθέσιμα παιχνίδια του Steam σε αυτή τη ζωή. Διαθέτει ήδη 700!</p>
+    			</div>
+  			 </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+    			<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="css/images/Chris.JPG" alt="Chris on Technopolitan" >
+    			</div>
+    			<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Χρήστος<i class="material-icons right">more_vert</i></span>
+      			<p><a href="http://www.doctorandroid.gr/" target="_blank">Dr. Android</a></p>
+    			</div>
+    			<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Ο Χρήστος...<i class="material-icons right">close</i></span>
+      			<p>είναι κολλημένος με το Android, καθαρόαιμο net-zombie και λάτρης του PlayStation.</p>
+      			<p>Είναι αυτό που λέμε στην καθημερινότητα "προμπλέμι", βαριέται μέχρι θανάτου και πιστεύει ότι το χιούμορ του δε θα εκτιμηθεί ποτέ κι από κανέναν. Οι περισσότεροι προσβάλλονται από αυτό κιόλας.</p>
+      			<p>Μεγάλο του επίτευγμα το Dr. Android, η σελίδα που διαθέτει τα πάντα γύρω από το οικοσύστημα του Android.</p>
+    			</div>
+  			 </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+    			<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="css/images/Salih.jpg" alt="Salih on Technopolitan">
+    			</div>
+    			<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Salih<i class="material-icons right">more_vert</i></span>
+      			<p><a href="https://cerebrux.net/" target="_blank">Cerebrux</a></p>
+    			</div>
+    			<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Ο Salih...<i class="material-icons right">close</i></span>
+      			<p>είναι μέγας μάστορας στο Linux, παινεμένος sysadmin και οpen-source evangelist.</p>
+      			<p>Το μεγαλυτερό του επίτευγμα είναι η πανέμορφη κοράκλα του, ενώ ο στόχος ζωής του είναι να πλατιάσει όλες τις συζητήσεις που συμμετέχει, μέχρι οι υπόλοιποι να βαρεθούν και να φύγουν.</p>
+      			<p>Ιδιοκτήτης του cerebrux.net, του site που μας λύνει όλες τις απορίες για το Linux και τους server.</p>
+
+    			</div>
+  			 </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+  </div>
+  </div>
+
+<!-- ARCHIVE -->
+ <div class="section no-pad-bot archive white">
+ 	<div class="container">
+   	<h1 class="header center grey-text">Όλες οι εκπομπές</h1>
+   	  <div class="row center">
+   	  	 <h5 class="header col s12 light black-text">Δε χόρτασες Technopolitan; Άκουσε όλες τις εκπομπές, παλιές και νέες.</h5>
+  		  </div>
+    		<div class="section center">
+ 				<iframe class="tunein" src="https://tunein.com/embed/player/p912525/" style="width:100%;height:350px;"></iframe> 
+ 				<br><br>			
+ 			</div>
+	</div>
+ </div>
+
+<!-- SOURCES -->
+ <div class="section no-pad-bot sources">
+ 	<div class="container">
+   	<h1 class="header center grey-text">Όπου γουστάρεις</h1>
+   	  <div class="row center">
+   	  	 <h5 class="header col s12 light black-text">Άκου τις εκπομπές του Technopolitan στην αγαπημένη σου υπηρεσία.</h5>
+  		  </div>
+    		<div class="section">
+				<table>
+        <tbody>
+          <tr>
+            <td><a href="https://itunes.apple.com/gr/podcast/technopolitan/id1158674191" target="blank"><img src="css/images/Apple-music.png" alt="Technopolitan on iTunes"></a></td>
+            <td><a href="http://pca.st/06Sc" target="blank"><img src="css/images/Pocketcasts.png" alt="Technopolitan on Pocket Casts"></a></td>
+            <td><a href="https://archive.org/details/@cerebrux" target="blank"><img src="css/images/Archive.png" alt="Technopolitan on Archive.org"></a></td>
+            <td><a href="https://www.youtube.com/channel/UC3fVe6StVEuHss3RlLM_eQA/videos" target="blank"><img src="css/images/Youtube.png" alt="Technopolitan on YouTube"></a></td>
+            <td><a href="http://www.stitcher.com/podcast/cerebrux/technopolitan" target="blank"><img src="css/images/Stitcher.png" alt="Technopolitan on Stitcher"></a></td>
+            <td><a href="http://tunein.com/radio/Technopolitan-p912525/" target="blank"><img src="css/images/Tunein.png" alt="Technopolitan on TuneIn radio"></a></td>
+            <td><a href="https://player.fm/series/technopolitan" target="blank"><img src="css/images/Playerfm.png" alt="Technopolitan on Player FM"></a></td>
+          </tr>
+        </tbody>
+      </table>
+ 			</div>
+	</div>
+ </div>
+
+<!-- COMMUNITY -->		
+ <div class="section no-pad-bot community white">
+ 	<div class="container">
+   	<h1 class="header center grey-text">Πες τα!</h1>
+   	<div class="row center">
+   	  	 <h5 class="header col s12 light black-text">Δώσε feedback για το Technopolitan, κράξε ή πες απλά την άποψή σου.</h5>
+  		</div>
+    	<div class="section">
+    		  	
+    	</div>
+   </div>
+ </div>
+
+
+
+				
+<!-- FOOTER -->
+  <footer class="page-footer grey" style="margin-top: 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Τι είναι το Technopolitan</h5>
+          <p class="grey-text text-lighten-4">Ένα "ραδιοφωνικό" μαγκαζίνο στο οποίο σχολιάζουμε τα καλύτερα κατά τη γνώμη μας τεχνολογικά νέα της εβδομάδας. Η θεματολογία μας ποικίλει και κινείται κυρίως γύρω από το mobile, το desktop, το gaming και άλλα, όμως μας αρέσουν και τα πιο προχωρημένα πράγματα όπως το Linux, το Chrome OS και τα single-board computer.</p>
+
+
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://feedburner.google.com/fb/a/mailverify?uri=cerebrux-Technopolitan&amp;loc=en_US">Εγγραφή με mail</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/technopolitan.gr/">Facebook</a></li>
+            <li><a class="white-text" href="https://plus.google.com/b/105846403981593340064/">Google+</a></li>
+            <li><a class="white-text" href="https://twitter.com/Technopolitangr">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      	<div class="row">
+      	<div class="col l6 s12">
+	      	© 2016 Technopolitan.gr
+      	</div>
+			<div class="col l4 offset-l2 s12">	      
+	      	Made by <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/chris-karasoulis-805158115">Chris K</a>
+	      </div>      
+    </div>
+    </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+	
+  <!-- JPLAYER -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transform2d.js"></script>
+		<script type="text/javascript" src="js/jquery.grab.js"></script>
+		<script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+		<script type="text/javascript" src="js/circle.player.js"></script>
+	   <script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+			{
+				m4a: "",
+				oga: "https://ia801509.us.archive.org/1/items/technopolitan-ep15/technopolitan-ep15.ogg"
+			}, {
+				cssSelectorAncestor: "#cp_container_1"
+			});
+		})
+		</script>
+  
+ </body>
+</html>
