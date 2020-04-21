@@ -1,4 +1,4 @@
 # Technopolitan
-Technopolitan podcast's former website
+[Technopolitan](www.technopolitan.gr) is a Greek podcast about Linux, Android and technology in general.
 
-The podcast can be found here: www.technopolitan.gr
+This is it's former website.
